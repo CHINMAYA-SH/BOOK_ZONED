@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF6FC194-A34D-4A0F-9AD3-76FB01A44C0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOOK_ZONED</RootNamespace>
+    <AssemblyName>BOOK-ZONED</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="book_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_add.Designer.cs">
+      <DependentUpon>book_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="member_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="member_add.Designer.cs">
+      <DependentUpon>member_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookdb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookdb.Designer.cs">
+      <DependentUpon>bookdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="circulationdb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="circulationdb.Designer.cs">
+      <DependentUpon>circulationdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_delete.Designer.cs">
+      <DependentUpon>book_delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="member_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="member_edit.Designer.cs">
+      <DependentUpon>member_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issue.Designer.cs">
+      <DependentUpon>issue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_mainpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a_mainpage.Designer.cs">
+      <DependentUpon>a_mainpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memberdb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memberdb.Designer.cs">
+      <DependentUpon>memberdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="member_remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="member_remove.Designer.cs">
+      <DependentUpon>member_remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="renew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renew.Designer.cs">
+      <DependentUpon>renew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnbook.Designer.cs">
+      <DependentUpon>returnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_members.Designer.cs">
+      <DependentUpon>search_members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_book.Designer.cs">
+      <DependentUpon>search_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a_welcome.Designer.cs">
+      <DependentUpon>a_welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bookdb.resx">
+      <DependentUpon>bookdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_add.resx">
+      <DependentUpon>book_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_delete.resx">
+      <DependentUpon>book_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="circulationdb.resx">
+      <DependentUpon>circulationdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issue.resx">
+      <DependentUpon>issue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberdb.resx">
+      <DependentUpon>memberdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="member_add.resx">
+      <DependentUpon>member_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="member_edit.resx">
+      <DependentUpon>member_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_mainpage.resx">
+      <DependentUpon>a_mainpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="member_remove.resx">
+      <DependentUpon>member_remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renew.resx">
+      <DependentUpon>renew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnbook.resx">
+      <DependentUpon>returnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_book.resx">
+      <DependentUpon>search_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_members.resx">
+      <DependentUpon>search_members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_welcome.resx">
+      <DependentUpon>a_welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
